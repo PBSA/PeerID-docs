@@ -1,8 +1,8 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [PeerID-docs](README.md)
 
-## deployment
+## Infrastructure
 
-* [AWS ECS deployment](deployment/aws-ecs-deployment.md)
+* [Deployment to AWS ECS](infrastructure/deployment-to-aws-ecs.md)
 
