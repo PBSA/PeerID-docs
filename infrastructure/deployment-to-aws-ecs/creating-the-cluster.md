@@ -1,5 +1,7 @@
 # Creating the Cluster
 
+After creating the Task Defintion, we can now create a Cluster.
+
 ## Creating a Fargate Cluster
 
 Select the `Networking only` cluster template.
@@ -17,4 +19,6 @@ Subnet 1: `10.0.0.0/24`
 Subnet 2: `10.0.1.0/24`  
 Subnet 3: `10.0.2.0/24`  
 Subnet 4: `10.0.3.0/24` 
+
+
 
