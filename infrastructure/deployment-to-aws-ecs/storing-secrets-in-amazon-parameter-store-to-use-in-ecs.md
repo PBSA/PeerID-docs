@@ -34,7 +34,7 @@ Create a policy with permissions for KMS and SSM:
             ],
             "Resource": [
                 "arn:aws:kms:<aws-region>:<account-id>:key/<key-id>",
-                "arn:aws:ssm:<aws-region>:<account-id>:parameter/<paramter>"
+                "arn:aws:ssm:<aws-region>:<account-id>:parameter/<parameter>"
             ]
         }
     ]
@@ -44,7 +44,7 @@ Create a policy with permissions for KMS and SSM:
 ### Create Role
 
 1. Choose the service `Elastic Container Service` 
-2. Select the use case as `Elastic Container Service Task` 
+2. Select the use case as `Elastic Container Service Task`
 3. Attach the policy created to read secrets from Parameter Store.
 4. Enter a role name.
 5. Enter a role description.
