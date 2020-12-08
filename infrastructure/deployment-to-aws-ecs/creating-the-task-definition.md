@@ -10,7 +10,7 @@ In ECS, create a new Task Definition and choose the desired launch type compatab
 
 ### Attach the Task Role
 
-Attach the task role created from "Storing Secrets in Amazon Parameter Store to use in ECS"
+Attach the task role created from [Storing Secrets in Amazon Parameter Store to use in ECS](https://peerplays.gitbook.io/peerid/infrastructure/deployment-to-aws-ecs/storing-secrets-in-amazon-parameter-store-to-use-in-ecs).
 
 ### Attach the Task Execution Role
 
@@ -41,7 +41,7 @@ Create two containers:
 7. Enter `/docker-entrypoint.sh` for the entry point.
 8. Enter `npm,run,start` for the command.
 9. Enter `peerid-backend` for the working directory.
-10. Enter the environment variables for PeerID Backend using `ValueFrom` and referencing the values created from Systems Manager Parameter Store.
+10. Enter the environment variables for PeerID Backend using `ValueFrom` and referencing the parameters from Systems Manager Parameter Store.
 
 ```text
 # List of variables
