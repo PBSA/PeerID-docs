@@ -4,5 +4,6 @@
 
 ## Infrastructure
 
-* [Deployment to AWS ECS](infrastructure/deployment-to-aws-ecs.md)
+* [Deployment to AWS ECS](infrastructure/deployment-to-aws-ecs/README.md)
+  * [Creating the Task Definitions](infrastructure/deployment-to-aws-ecs/untitled.md)
 
