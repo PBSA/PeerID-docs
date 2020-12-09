@@ -2,9 +2,9 @@
 
 This article will be referencing the following repositories as the Docker image codebase:
 
-{% embed url="https://gitlab.com/PBSA/PeerplaysIO/tools-libs/peerid/peerid-gui" %}
+{% embed url="https://gitlab.com/PBSA/PeerplaysIO/tools-libs/peerid/peerid-gui/-/tree/support/docker" %}
 
-{% embed url="https://gitlab.com/PBSA/PeerplaysIO/tools-libs/peerid/peerid-backend" %}
+{% embed url="https://gitlab.com/PBSA/PeerplaysIO/tools-libs/peerid/peerid-backend/-/tree/support/docker" %}
 
 In ECS, create a new Task Definition and choose the desired launch type compatability \(Fargate or EC2\)
 
