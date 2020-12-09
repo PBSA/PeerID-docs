@@ -6,7 +6,7 @@ This article will be referencing the following repositories as the Docker image 
 
 {% embed url="https://gitlab.com/PBSA/PeerplaysIO/tools-libs/peerid/peerid-backend/-/tree/support/docker" %}
 
-In ECS, create a new Task Definition and choose the desired launch type compatability \(Fargate or EC2\)
+In ECS, create a new Task Definition and choose the desired launch type compatibility \(Fargate or EC2\)
 
 ### Attach the Task Role
 
@@ -45,32 +45,45 @@ Create two containers:
 
 ```text
 # List of variables
-BACKEND_URL
+
+## Auth for a PostgreSQL database
 DB_DATABASE
 DB_HOST
 DB_PASSWORD
 DB_PORT
 DB_USER
+
+## Third party login
 DISCORD_ID
 DISCORD_SECRET
 FACEBOOK_ID
 FACEBOOK_SECRET
-FRONTEND_CALLBACK_URL
-FRONTEND_URL
 GOOGLE_ID
 GOOGLE_SECRET
+
+## Routes
+FRONTEND_CALLBACK_URL # https://example.com/callback
+FRONTEND_URL # https://example.com
+BACKEND_URL # https://example.com/api
+
+## Mailer settings
 MAILER_HOST
 MAILER_PASS
 MAILER_PORT
 MAILER_SENDER
 MAILER_USER
-MODULE
+
+## Peerplays Settings
+
 PEERPLAYS_FAUCET_URL
 PEERPLAYS_PAYMENT_ACCOUNT_ID
 PEERPLAYS_PAYMENT_ACCOUNT_WIF
 PEERPLAYS_REFERRER
-PEERPLAYS_WS
-SESSION_SECRET
+PEERPLAYS_WS # node api endpoint
+
+## NodeJS
+MODULE # API
+SESSION_SECRET # randoms string
 ```
 
 **PeerID Frontend**
@@ -87,9 +100,10 @@ SESSION_SECRET
 
 ```text
 # List of variables
-BACKEND_NAME
-BACKEND_PORT
-FRONTEND_NAME
-VHOST
+
+BACKEND_NAME # peerid-backend
+BACKEND_PORT # 3000
+FRONTEND_NAME # peerid-gui
+VHOST # DNS/localhost
 ```
 
