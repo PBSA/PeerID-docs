@@ -13,6 +13,6 @@
 
 ## Development
 
-* [Brain Storming](development/untitled.md)
+* [Brain Storming](development/brain-stroming.md)
 * [Software Requirements](development/software-requirements.md)
 
