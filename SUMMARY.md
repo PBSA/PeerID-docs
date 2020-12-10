@@ -11,3 +11,7 @@
   * [Creating the Cluster](infrastructure/deployment-to-aws-ecs/creating-the-cluster.md)
   * [Creating the Service](infrastructure/deployment-to-aws-ecs/creating-the-service.md)
 
+## Development
+
+* [Software Requirements](development/software-requirements.md)
+
