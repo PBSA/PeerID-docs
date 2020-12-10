@@ -1,10 +1,6 @@
-# Brain Storming
+# Brain Stroming
 
 
-
-```text
-​
-```
 
 ## Identity Provider - Brainstroming
 
