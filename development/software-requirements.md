@@ -34,5 +34,17 @@ The components:
 * Multi Factor Authentication
 * Anti Phishing features
 
-**3.1.1 Account creation3.1.2 Retrieving Peerplays keys3.1.3 dApp Provisioning3.1.4 dApp Permissions3.1.4.1 External conditions3.1.5 Miscellaneous Features3.2 Functional RequirementsAccount creation1.5.dApp provisioning**
+**3.1.1 Account creation**
+
+**3.1.2 Retrieving Peerplays keys**
+
+**3.1.3 dApp Provisioning**
+
+**3.1.4 dApp Permissions**
+
+**3.1.4.1 External conditions**
+
+**3.1.5 Miscellaneous Features**
+
+**3.2 Functional Requirements Account creation1.5.dApp provisioning**
 
