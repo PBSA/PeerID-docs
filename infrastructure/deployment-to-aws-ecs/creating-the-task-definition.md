@@ -38,7 +38,7 @@ Create two containers:
 4. Enter `3000` tcp for the port mappings.
 5. Enter `756` CPU units.
 6. Tick the essential box.
-7. Enter `/docker-entrypoint.sh` for the entry point.
+7. Enter  `/peerid-backend/docker-entrypoint.sh` for the entry point.
 8. Enter `npm,run,start` for the command.
 9. Enter `peerid-backend` for the working directory.
 10. Enter the environment variables for PeerID Backend using `ValueFrom` and referencing the parameters from Systems Manager Parameter Store.
