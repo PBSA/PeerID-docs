@@ -13,6 +13,7 @@
 
 ## Development
 
+* [Authentication with PeerID](development/authentication-with-peerid.md)
 * [Brain Stroming](development/brain-stroming.md)
 * [Software Requirements](development/software-requirements.md)
 
