@@ -25,7 +25,12 @@ Once you create a developer application, you are assigned a client ID. Some auth
 
 ## **Getting Tokens**
 
-PeerID follows the OAuth authorization code flow to request user tokens. Follow the below steps to get the access token for the user:
+PeerID supports several authentication flows:  
+**1. OAuth Authorization code flow:** This should be used when your application uses a client-server architecture, can securely store a client secret, can request the user to allow the app to perform some operations on behalf of the user and can make server-to-server requests. This is the recommended approach.  
+**2. OAuth Resource Owner Password Credentials flow:** This should be used when your application is a single page browser app using a client-server architecture and can request client for credentials but you don't want the client to divert from your page. Note: The client credentials should never be stored in your database.
+
+_**OAuth Authorization code flow**_  
+Follow the below steps to get the access token for the user using the OAuth Authorization code flow:
 
 1. Send the user you want to authenticate to your registered redirect URI. An authorization page will ask the user to sign up or log into PeerID and allow the user to choose whether to authorize your application/identity system.
 
@@ -66,6 +71,34 @@ The response includes the state parameter, if it was in your request.
 }`
 
 Note: Store the access token and refresh token like passwords.
+
+**OAuth Resource Owner Password Credentials flow**  
+Follow the below steps to get the access token using the OAuth Resource Owner Password Credentials flow:
+
+1. In your app, request for user's login credentials i.e. username or email ID and mobile or password and on your server, get an access token by making this request:  
+
+
+   `POST https://peerid.peerplays.download/api/v1/auth/token  
+        ?login=<user's username or email ID>  
+        &password=<user's password>  
+        &mobile=<user's mobile number>  
+        &client_id=<your client ID>`
+
+  
+   Either `password` or `mobile` parameters has to be passed in this request. If both are passed, the PeerID server validates both of them along with the `login`.  
+
+2. We respond with a json-encoded access token. The response looks like this:
+
+    `{  
+       "result": {  
+           "expires": "<expiry date of the token>",  
+           "app_id": <your client ID>,  
+           "scope": <permissions granted by the user>,  
+           "token": "<access token for the user>",  
+           "refresh_token": "<refresh token for the user>"  
+       },  
+       "status": 200  
+   }`
 
 ## **Sending access tokens**
 
