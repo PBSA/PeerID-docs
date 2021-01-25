@@ -8,6 +8,8 @@ PeerID also allows your users to register and login to their Peerplays accounts 
 
 Note: PeerID doesn’t store your passwords or keys anywhere. It uses the custom permissions on the Peerplays blockchain to perform the operations on behalf of the user.
 
+{% page-ref page="how-does-peerid-work-without-storing-the-keys.md" %}
+
 Authentication involves:
 
 1. Registering your app to obtain a client ID and client secret. This includes specifying scopes \(permissions\) your app requires.

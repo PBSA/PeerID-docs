@@ -13,6 +13,7 @@
 
 ## Development
 
+* [How does PeerID work without storing the keys ?](development/how-does-peerid-work-without-storing-the-keys.md)
 * [Authentication with PeerID](development/authentication-with-peerid.md)
 * [Brain Stroming](development/brain-stroming.md)
 * [Software Requirements](development/software-requirements.md)
