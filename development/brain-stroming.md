@@ -1,4 +1,4 @@
-# Brain Stroming
+# Brain Storming
 
 ## Brain Stroming
 
