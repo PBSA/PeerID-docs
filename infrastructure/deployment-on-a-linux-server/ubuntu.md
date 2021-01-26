@@ -4,6 +4,7 @@
 
 * PostgreSQL
 * NodeJS 12+
+* Ubuntu 18.04+ recommended
 
 ### Installing PostgreSQL
 
