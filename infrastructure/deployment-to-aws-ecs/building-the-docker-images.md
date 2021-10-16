@@ -4,7 +4,7 @@
 
 {% embed url="https://gitlab.com/PBSA/PeerplaysIO/tools-libs/peerid/peerid-backend/-/tree/support/docker" %}
 
-```text
+```
 git clone https://gitlab.com/PBSA/PeerplaysIO/tools-libs/peerid/peerid-backend.git -b support/docker
 cd peerid-backend
 docker build .
@@ -14,7 +14,7 @@ docker build .
 
 {% embed url="https://gitlab.com/PBSA/PeerplaysIO/tools-libs/peerid/peerid-gui/-/tree/support/docker" %}
 
-```text
+```
 git clone https://gitlab.com/PBSA/PeerplaysIO/tools-libs/peerid/peerid-gui.git -b support/docker
 cd peerid-gui
 
@@ -26,4 +26,3 @@ vim .env
 
 docker build . -f prod.Dockerfile
 ```
-

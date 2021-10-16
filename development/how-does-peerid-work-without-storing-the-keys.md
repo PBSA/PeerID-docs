@@ -2,7 +2,7 @@
 
 ### Introduction
 
-With the implementation of Hierarchical Role based Permissions \(HRP\) in the Peerplays blockchain and the introduction of Custom Authorities, it is now possible to allow a proxy account to perform any operation on the Peerplays blockchain on your behalf. PeerID uses this feature to act as a proxy for any account that has provided the permission to perform a particular operations.
+With the implementation of Hierarchical Role based Permissions (HRP) in the Peerplays blockchain and the introduction of Custom Authorities, it is now possible to allow a proxy account to perform any operation on the Peerplays blockchain on your behalf. PeerID uses this feature to act as a proxy for any account that has provided the permission to perform a particular operations.
 
 ### Custom Permissions
 
@@ -11,7 +11,7 @@ Every account that’s created on Peerplays has two default permissions by defau
 1. Owner
 2. Active
 
-They have a parent-child relationship by default \(owner being the parent\). The implicit default permission linked to all operations is active, which sits one level below the owner permission within the hierarchy structure.
+They have a parent-child relationship by default (owner being the parent). The implicit default permission linked to all operations is active, which sits one level below the owner permission within the hierarchy structure.
 
 As a result, the active permission can do anything the owner permission can, except changing the keys associated with the owner.
 
@@ -21,7 +21,7 @@ This gives applications flexibility to use the custom permission of an account a
 
 ### Custom Authorities
 
-In Peerplays \(graphene-based chains\), an authority consists of one or many entities that authorize an operation, such as transfers or bet placement, etc. Authority consists of one or several pairs of an account name with a weight. In order to obtain a valid transaction, the sum of the weights from signing the parties has to exceed the threshold as defined in the permissions.
+In Peerplays (graphene-based chains), an authority consists of one or many entities that authorize an operation, such as transfers or bet placement, etc. Authority consists of one or several pairs of an account name with a weight. In order to obtain a valid transaction, the sum of the weights from signing the parties has to exceed the threshold as defined in the permissions.
 
 Custom Authorities takes this concept to the next level with the help of Custom Permissions by storing the mapping between custom permissions and operations. The custom authorities specify the actual operation on the Peerplays blockchain that a proxy account can perform on behalf of another account and the validity of this arrangement.
 
@@ -31,5 +31,4 @@ As soon as an account is created or an existing Peerplays account logs in using 
 
 PeerID further allows developers to create an app which can request for additional permissions from the user. When the user joins the app by allowing the app to perform some operation on his behalf, PeerID creates a custom authority for the requested operation by using its own custom permission. This way, we don't have to store the user's keys anywhere.
 
-![Working of PeerID](../.gitbook/assets/screen-shot-2021-01-25-at-10.28.20-am.png)
-
+![Working of PeerID](<../.gitbook/assets/Screen Shot 2021-01-25 at 10.28.20 AM.png>)

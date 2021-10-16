@@ -9,7 +9,7 @@ One way to pass secrets and variables securely to containers in AWS is to use Pa
 1. Enter a name or path for the parameter.
 2. Optionally add a description.
 3. Select the tier to use.
-4. Select the type. \(we will choose SecureString.\)
+4. Select the type. (we will choose SecureString.)
 5. Select the KMS key source which is what will encrypt the SecureString.
 6. Enter the value for the parameter.
 
@@ -21,7 +21,7 @@ In order for the containers in our Task Definition to get parameters, we need to
 
 Create a policy with permissions for KMS and SSM:
 
-```text
+```
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -48,4 +48,3 @@ Create a policy with permissions for KMS and SSM:
 3. Attach the policy created to read secrets from Parameter Store.
 4. Enter a role name.
 5. Enter a role description.
-

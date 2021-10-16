@@ -6,7 +6,7 @@ This article will be referencing the following repositories as the Docker image 
 
 {% embed url="https://gitlab.com/PBSA/PeerplaysIO/tools-libs/peerid/peerid-backend/-/tree/support/docker" %}
 
-In ECS, create a new Task Definition and choose the desired launch type compatibility \(Fargate or EC2\)
+In ECS, create a new Task Definition and choose the desired launch type compatibility (Fargate or EC2)
 
 ### Attach the Task Role
 
@@ -20,21 +20,21 @@ This role is required by tasks to pull container images and publish container lo
 
 We can assign total memory and CPU to the task. For PeerID, choose:
 
-* 2GB Task Memory \(GB\)
-* 1 vCPU Task CPU \(vCPU\)
+* 2GB Task Memory (GB)
+* 1 vCPU Task CPU (vCPU)
 
 ### Adding the Containers
 
 Create two containers:
 
 * PeerID Backend
-* PeerID Frontend + Webserver \(we will be using NGINX\)
+* PeerID Frontend + Webserver (we will be using NGINX)
 
 #### PeerID Backend
 
 1. Enter the container name.
 2. Enter the path to the Docker registry with the container Image.
-3. Enter `1024` ****for a soft limit for the memory.
+3. Enter `1024`** **for a soft limit for the memory.
 4. Enter `3000` tcp for the port mappings.
 5. Enter `756` CPU units.
 6. Tick the essential box.
@@ -43,7 +43,7 @@ Create two containers:
 9. Enter `peerid-backend` for the working directory.
 10. Enter the environment variables for PeerID Backend using `ValueFrom` and referencing the parameters from Systems Manager Parameter Store.
 
-```text
+```
 # List of variables
 
 ## Auth for a PostgreSQL database
@@ -99,7 +99,7 @@ SESSION_SECRET # randoms string
 8. Enter `nginx,-g,daemon off;` for the command.
 9. Enter the environment variables for PeerID GUI using `ValueFrom` and referencing the values created from Systems Manager Parameter Store.
 
-```text
+```
 # List of variables
 
 BACKEND_NAME # peerid-backend
@@ -107,4 +107,3 @@ BACKEND_PORT # 3000
 FRONTEND_NAME # peerid-gui
 VHOST # DNS/localhost
 ```
-
